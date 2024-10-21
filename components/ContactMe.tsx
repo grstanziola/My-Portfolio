@@ -16,36 +16,34 @@ const ContactForm = () => {
         e.target as HTMLFormElement,
         process.env.REACT_APP_PUBLIC_KEY || ""
       )
-      .then(
-        (result) => {
-          setStateMessage("Message sent!");
-          setIsSubmitting(false);
-          setTimeout(() => {
-            setStateMessage(null);
-          }, 5000);
-        },
-        (error) => {
-          setStateMessage("Something went wrong, please try again later");
-          setIsSubmitting(false);
-          setTimeout(() => {
-            setStateMessage(null);
-          }, 5000);
-        }
-      );
+      .then(() => {
+        setStateMessage("Message sent!");
+        setIsSubmitting(false);
+        setTimeout(() => {
+          setStateMessage(null);
+        }, 5000);
+      })
+      .catch(() => {
+        setStateMessage("Something went wrong, please try again later");
+        setIsSubmitting(false);
+        setTimeout(() => {
+          setStateMessage(null);
+        }, 5000);
+      });
 
     (e.target as HTMLFormElement).reset();
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-10 px-6 md:px-8 lg:px-10 text-blacl">
+    <div className="max-w-4xl mx-auto py-10 px-6 md:px-8 lg:px-10 text-black">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h3 className="text-2xl font-semibold mb-4">Get in touch</h3>
           <p className="mb-2">Email: gabrielstanziola4@gmail.com</p>
-          <p className="mb-4">Phone: (+39)&nbsp;3514730621 </p>
+          <p className="mb-4">Phone: (+39)&nbsp;3514730621</p>
           <p className="mb-6 text-black">
-            "I welcome the opportunity to connect. Feel free to reach out, and
-            let's explore how we can collaborate."
+            &quot;I welcome the opportunity to connect. Feel free to reach out,
+            and let&apos;s explore how we can collaborate.&quot;
           </p>
         </div>
 

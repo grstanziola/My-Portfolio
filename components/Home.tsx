@@ -13,7 +13,9 @@ import { HoverEffect } from "./ui/card-hover-effect";
 import { GlareCard } from "@/components/ui/glare-card";
 import Link from "next/link";
 import { IconBackground } from "@tabler/icons-react";
-import Content from "./Content";
+{
+  /*import Content from "./Content";*/
+}
 import ContactForm from "@/components/ContactMe";
 
 export function TimelineDemo() {
@@ -72,6 +74,7 @@ export function TimelineDemo() {
                   link: "",
                 },
               ]}
+              className="text-lg text-justify"
             />
           </div>
         </div>
@@ -81,22 +84,22 @@ export function TimelineDemo() {
       title: "Projects",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
             A collection of my recent works:
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            {/*<div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               1️⃣&nbsp;&nbsp; Project 1
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            </div>*/}
+            {/*<div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               2️⃣&nbsp;&nbsp; Project 2
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            </div>*/}
+            {/*<div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               3️⃣&nbsp;&nbsp; Project 3
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+            </div>*/}
+            {/*<div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               4️⃣&nbsp;&nbsp; Project 4
-            </div>
+            </div>*/}
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div>

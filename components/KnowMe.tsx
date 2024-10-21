@@ -30,12 +30,12 @@ const KnowMe = () => {
         </motion.div>
 
         {/* Profile Information Section */}
-        <div className="max-w-lg text-left ">
+        <div className="max-w-lg text-left">
           <p
             className="text-xl leading-relaxed"
             style={{ textAlign: "justify" }}
           >
-            Hello, I'm Gabriel Stranziola, a dedicated data scientist and
+            Hello, I&apos;m Gabriel Stranziola, a dedicated data scientist and
             developer located in Panama. With a passion for transforming complex
             challenges into actionable insights, I specialize in leveraging data
             to drive informed decision-making and create applications that

@@ -1,3 +1,5 @@
+{
+  /*
 "use client";
 import React from "react";
 import { GlareCard } from "@/components/ui/glare-card";
@@ -46,3 +48,5 @@ const Content = () => {
 };
 
 export default Content;
+*/
+}

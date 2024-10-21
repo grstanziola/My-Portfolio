@@ -1,8 +1,8 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import React, { useState } from "react"; // Removed useRef, useEffect since they are not used
+import { AnimatePresence, motion } from "framer-motion"; // Removed AnimatePresence since it's not used
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import Image from "next/image"; // You may want to keep this if you're using the Image component elsewhere
 
 type Card = {
   id: number;
@@ -26,7 +26,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div

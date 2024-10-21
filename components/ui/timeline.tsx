@@ -1,13 +1,6 @@
 "use client";
-import {
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-  motion,
-} from "framer-motion";
-import Link from "next/link";
+import { useScroll, useTransform, motion } from "framer-motion"; // Removed useMotionValueEvent since it's not used
 import React, { useEffect, useRef, useState } from "react";
-import { SiGithub, SiLinkedin } from "react-icons/si"; // Social Icons
 import SocialLinks from "../SocialLinks";
 
 interface TimelineEntry {
@@ -34,10 +27,6 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
-
-  function handleLinkClick(arg0: string): void {
-    throw new Error("Function not implemented.");
-  }
 
   return (
     <div
