@@ -38,7 +38,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Gabriel Stanziola
         </h1>
         <p className="text-neutral-700 dark:text-neutral-300 text-xl md:text-base max-w-lg">
-          "Transforming data into insights and codes into solutions".
+          &quot;Transforming data into insights and codes into solutions&quot;.
         </p>
         <div>
           <b>&nbsp;</b>

@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react"; // Removed useRef, useEffect since they are not used
-import { AnimatePresence, motion } from "framer-motion"; // Removed AnimatePresence since it's not used
+import { motion } from "framer-motion"; // Removed AnimatePresence since it's not used
 import { cn } from "@/lib/utils";
-import Image from "next/image"; // You may want to keep this if you're using the Image component elsewhere
+// Removed `Image` from `next/image` since it is not used
 
 type Card = {
   id: number;
