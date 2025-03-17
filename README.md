@@ -1,4 +1,4 @@
-# 🌟 Gabriel Stranziola's Portfolio (minimalist version) 
+# 🌟 Developer Portfolio (minimalist version) 
 
 Welcome to my personal portfolio! 🚀 This is where I showcase my journey in **data science, web development, and cloud computing**. It’s more than just a website—it’s a reflection of my skills, experience, and passion for technology. Feel free to clone it and use it for your needs!
 
